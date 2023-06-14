@@ -1,0 +1,210 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Hakeem's Portfolio: Anisotropic Diffusion</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<script src="https://kit.fontawesome.com/09f8bce437.js" crossorigin="anonymous"></script>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<div id="header">
+
+				<div class="top">
+
+					<!-- Logo -->
+						<div id="logo">
+							<span class="image avatar48"><img src="images/profilepic.jpg" alt="" /></span>
+							<h1 id="title">Hakeem Rahman</h1>
+							<p>Junior Web Developer</p>
+						</div>
+
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="#top" id="top-link"><span class="icon solid fa-home">Project Intro</span></a></li>
+								<li><a href="#portfolio" id="portfolio-link"><span class="icon solid fa-th">About the Project</span></a></li>
+								<li><a href="#images" id="about-link"><span class="icon solid fa-user">Project Images</span></a></li>
+                <li><a href="index.html"><span class="icon solid fa-arrow-left">Go Back</span></a></li>
+							</ul>
+						</nav>
+
+				</div>
+
+				<div class="bottom">
+					<!-- Social Icons -->
+						<ul class="icons">
+							<li><a href="https://www.youtube.com/channel/UCES4UmikHK_cVcRWxxAJVeA" target="_blank" class="icon brands fa-youtube"><span class="label">YouTube</span></a></li>
+							<li><a href="https://github.com/SeppuCake" target="_blank" class="icon brands fa-github"><span class="label">Github</span></a></li>
+							<li><a href="index.html" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+							<li><a href="https://www.linkedin.com/in/mohd-ameerul-hakeem-abdul-rahman/" target = "_blank" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+						</ul>
+				</div>
+			</div>
+
+		<!-- Main -->
+			<div id="main">
+
+				<!-- Intro -->
+					<section id="top" class="one dark cover">
+						<div class="container">
+
+							<header>
+								<h2 class="alt"><strong>Anisotropic Diffusion with Java</strong>,<br />
+								</h2>
+								<p>A project that I was hired to understand and translate math calculation into a Java coding and proof the formula in order to create a filtered image run through a mathematical function based on Perona-Malik diffusion.<br /></p>
+							</header>
+
+							<footer>
+								<a href="#portfolio" class="button scrolly">Learn more</a>
+							</footer>
+
+						</div>
+					</section>
+
+				<!-- Portfolio -->
+					<section id="portfolio" class="two">
+						<div class="container">
+
+							<header>
+								<h2>About the Project</h2>
+							</header>
+
+							<p>This is one of the freelance work I was hired to partake in for a local student. The client provided the info of their project and required an assistant and a teacher to create a Java program for their project in order to proof a concept in Anisotropic Diffusion. It was quite tough deciphering the formula and I had to process the equation that was in their paperwork and translate it to Java language to make the program based on <a href="https://www.researchgate.net/publication/236985005_KAZE_Features#pf5" target="_blank">Perona-Malik</a>, <a href="https://www.researchgate.net/publication/316693552_Automatic_Conductance_Estimation_Methods_for_Anisotropic_Diffusion_ITK_Filters" target="_blank">Conductance Estimation Methods</a> and <a href="https://www.cns.nyu.edu/heegerlab/content/software/robanistdif/Black-IEEE-IP98.pdf" target="_blank">BLACK et al</a>. The principles applied for the program to work:
+                <ul>
+                  <li>Persona-Malik</li>
+                  <li>Conductance Equation</li>
+                  <li>Black et al</li>
+                </ul>
+              </p>
+            </div>
+          </section>
+
+        <!-- Project Images -->
+          <section id="images" class="three">
+            <div class="container">
+              <header>
+                <h2>Project Images</h2>
+              </header>
+
+              <div class="row">
+								<div class="col-4 col-12-mobile">
+									<article class="item">
+										<img src="images/equationPM1.jpg" style="height:70%; width:70%" onclick="openModal('images/equationPM1.jpg')" alt="Image thumbnail" />
+										<div id="myModal">
+											<span onclick="closeModal()">&times;</span>
+											<img id="modalImage" src="images/equationPM1.jpg" alt="Full-size Image" />
+										</div>
+										<img src="images/equationPM2.jpg" style="height:70%; width:70%" onclick="openModal('images/equationPM2.jpg')" alt="Image thumbnail" />
+										<div id="myModal">
+											<span onclick="closeModal()">&times;</span>
+											<img id="modalImage" src="images/equationPM2.jpg" alt="Full-size Image" />
+										</div>
+										<img src="images/equationPM3.jpg" style="height:70%; width:70%" onclick="openModal('images/equationPM2.jpg')" alt="Image thumbnail" />
+                    <div id="myModal">
+											<span onclick="closeModal()">&times;</span>
+											<img id="modalImage" src="images/equationPM3.jpg" alt="Full-size Image" />
+										</div>
+										<img src="images/equationPM4.jpg" style="height:70%; width:70%" onclick="openModal('images/equationPM2.jpg')" alt="Image thumbnail" />
+                    <div id="myModal">
+											<span onclick="closeModal()">&times;</span>
+											<img id="modalImage" src="images/equationPM4.jpg" alt="Full-size Image" />
+										</div>
+										<header>
+											<h3>Equation for Anisotropic Diffusion</h3>
+										</header>
+									</article>
+									<article class="item">
+										<a href="#" class="image fit"><img src="images/peronamalik1.png" alt="" /></a>
+										<header>
+											<h3>Perona-Malik Equation #1</h3>
+										</header>
+									</article>
+								</div>
+								<div class="col-4 col-12-mobile">
+									<article class="item">
+										<img src="images/peronamalik2.png" onclick="openModal('images/peronamalik2.png')" style="height:70%; width:70%" alt="Image thumbnail" />
+										<div id="myModal">
+											<span onclick="closeModal()">&times;</span>
+											<img id="modalImage" src="images/peronamalik2.png" alt="Full-size Image" />
+										</div>
+										<header>
+											<h3>Perona-Malik Equation #2</h3>
+										</header>
+									</article>
+									<article class="item">
+										<img src="images/blacketal.png" onclick="openModal('images/blacketal.png')" style="height:70%; width:70%" alt="Image thumbnail" />
+										<div id="myModal">
+											<span onclick="closeModal()">&times;</span>
+											<img id="modalImage" src="images/blacketal.png" alt="Full-size Image" />
+										</div>
+										<header>
+											<h3>Black et al Equation</h3>
+										</header>
+									</article>
+								</div>
+								<div class="col-4 col-12-mobile">
+									<article class="item">
+										<img src="images/conductance1.png" onclick="openModal('images/conductance1.png')" style="height:70%; width:70%" alt="Image thumbnail" />
+										<div id="myModal">
+											<span onclick="closeModal()">&times;</span>
+											<img id="modalImage" src="images/conductance1.png" alt="Full-size Image" />
+										</div>
+										<header>
+											<h3>Conductance Equation</h3>
+										</header>
+									</article>
+									<article class="item">
+										<img src="images/anistropicdiffusionresults.png" onclick="openModal('images/anistropicdiffusionresults.png')" style="height:70%; width:70%" alt="Image thumbnail" />
+										<div id="myModal">
+											<span onclick="closeModal()">&times;</span>
+											<img id="modalImage" src="images/anistropicdiffusionresults.png" alt="Full-size Image" />
+										</div>
+										<header>
+											<h3>Anisotropic Diffusion Results</h3>
+										</header>
+									</article>
+								</div>
+							</div>
+            </div>
+          </section>
+			</div>
+
+		<!-- Footer -->
+		<div id="footer">
+
+			<!-- Copyright -->
+				<ul class="copyright">
+					<li>&copy; @SeppuCake. All rights reserved.</li><li>Credits to Design & Images: <a href="https://html5up.net">HTML5 UP</a> & <a href="https://unsplash.com">Unsplash</a></li>
+				</ul>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script>
+				// JavaScript functions to open and close the modal window
+				function openModal(imageUrl) {
+					var modal = document.getElementById("myModal");
+					var modalImage = document.getElementById("modalImage");
+					modal.style.display = "block";
+					modalImage.src = imageUrl;
+				}
+				
+				function closeModal() {
+					var modal = document.getElementById("myModal");
+					modal.style.display = "none";
+				}
+			</script>
+
+	</body>
+</html>

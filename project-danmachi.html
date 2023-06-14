@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Hakeem's Portfolio: Danmachi RPG</title>
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, user-scalable=no"
+		/>
+		<script
+			src="https://kit.fontawesome.com/09f8bce437.js"
+			crossorigin="anonymous"
+		></script>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+		<!-- Header -->
+		<div id="header">
+			<div class="top">
+				<!-- Logo -->
+				<div id="logo">
+					<span class="image avatar48"
+						><img src="images/profilepic.jpg" alt=""
+					/></span>
+					<h1 id="title">Hakeem Rahman</h1>
+					<p>Junior Web Developer</p>
+				</div>
+
+				<!-- Nav -->
+				<nav id="nav">
+					<ul>
+						<li>
+							<a href="#top" id="top-link"
+								><span class="icon solid fa-home">Project Intro</span></a
+							>
+						</li>
+						<li>
+							<a href="#portfolio" id="portfolio-link"
+								><span class="icon solid fa-th">About the Project</span></a
+							>
+						</li>
+						<li>
+							<a href="#images" id="about-link"
+								><span class="icon solid fa-user">Project Images</span></a
+							>
+						</li>
+						<li>
+							<a href="personal-projects.html"
+								><span class="icon solid fa-arrow-left">Go Back</span></a
+							>
+						</li>
+						<li>
+							<a href="index.html"
+								><span class="icon solid fa-home">Go Home</span></a
+							>
+						</li>
+					</ul>
+				</nav>
+			</div>
+
+			<div class="bottom">
+				<!-- Social Icons -->
+				<ul class="icons">
+					<li>
+						<a
+							href="https://www.youtube.com/channel/UCES4UmikHK_cVcRWxxAJVeA"
+							target="_blank"
+							class="icon brands fa-youtube"
+							><span class="label">YouTube</span></a
+						>
+					</li>
+					<li>
+						<a
+							href="https://github.com/SeppuCake"
+							target="_blank"
+							class="icon brands fa-github"
+							><span class="label">Github</span></a
+						>
+					</li>
+					<li>
+						<a href="index.html" class="icon solid fa-envelope"><span class="label">Email</span></a>
+					</li>
+					<li>
+						<a href="https://www.linkedin.com/in/mohd-ameerul-hakeem-abdul-rahman/" target="_blank" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<!-- Main -->
+		<div id="main">
+			<!-- Intro -->
+			<section id="top" class="one dark cover">
+				<div class="container">
+					<header>
+						<h2 class="alt">
+							<strong>Danmachi RPG (HTML Text-Based RPG)</strong><br />
+						</h2>
+						<p>
+							A simple HTML text-based RPG based on Fujino Omori's light novel, <br />"Is It Wrong to Try to Pick Up Girls in a Dungeon?"<br />
+						</p>
+					</header>
+
+					<footer>
+						<a href="#portfolio" class="button scrolly">Learn more</a>
+					</footer>
+				</div>
+			</section>
+
+			<!-- Portfolio -->
+			<section id="portfolio" class="two">
+				<div class="container">
+					<header>
+						<h2>About the Project</h2>
+					</header>
+
+					<p class="tab-like" style="text-align: justify">
+						Danmachi Role-playing Game (RPG) was one of my first projects that piqued my interest in website development in
+						HTML and PHP. Despite only having basics of HTML, CSS, SQL and PHP knowledge, this is my attempt in building my own text-based RPG to create an interactive game with simple website design to assist me in understanding the concept of web programming. With the challenge of front-end and back-end needed to be developed, I employed the basic planning procedures of sketching and design for the database in SQL and trial and error in figuring out the CSS styling for the pages.
+					</p>
+				</div>
+			</section>
+
+			<!-- Project Images -->
+			<section id="images" class="three">
+				<div class="container">
+					<header>
+						<h2>Project Images</h2>
+					</header>
+
+					<div class="row">
+						<div class="col-6 col-12-mobile">
+							<article class="item">
+								<img
+									src="images/danmachiRPG/d_welcomepage.png"
+									onclick="openModal('images/danmachiRPG/d_welcomepage.png')"
+									style="height: 70%; width: 70%"
+									alt="Image thumbnail"
+								/>
+								<div id="myModal">
+									<span onclick="closeModal()">&times;</span>
+									<img
+										id="modalImage"
+										src="images/danmachiRPG/d_welcomepage.png"
+										alt="Full-size Image"
+									/>
+								</div>
+								<header>
+									<h3>Danmachi RPG Welcome Page</h3>
+								</header>
+							</article>
+							<article class="item">
+								<img
+									src="images/danmachiRPG/d_homepage.png"
+									onclick="openModal('images/danmachiRPG/d_homepage.png')"
+									style="height: 70%; width: 70%"
+									alt="Image thumbnail"
+								/>
+								<div id="myModal">
+									<span onclick="closeModal()">&times;</span>
+									<img
+										id="modalImage"
+										src="images/danmachiRPG/d_homepage.png"
+										alt="Full-size Image"
+									/>
+								</div>
+								<header>
+									<h3>Home Page</h3>
+								</header>
+							</article>
+							<article class="item">
+								<img
+									src="images/danmachiRPG/d_battlepage.png"
+									onclick="openModal('images/danmachiRPG/d_battlepage.png')"
+									style="height: 70%; width: 70%"
+									alt="Image thumbnail"
+								/>
+								<div id="myModal">
+									<span onclick="closeModal()">&times;</span>
+									<img
+										id="modalImage"
+										src="images/danmachiRPG/d_battlepage.png"
+										alt="Full-size Image"
+									/>
+								</div>
+								<header>
+									<h3>Battle Page</h3>
+								</header>
+							</article>
+						</div>
+						<div class="col-6 col-12-mobile">
+							<article class="item">
+								<img
+									src="images/danmachiRPG/d_createmonster.png"
+									onclick="openModal('images/danmachiRPG/d_createmonster.png')"
+									style="height: 70%; width: 70%"
+									alt="Image thumbnail"
+								/>
+								<div id="myModal">
+									<span onclick="closeModal()">&times;</span>
+									<img
+										id="modalImage"
+										src="images/danmachiRPG/d_createmonster.png"
+										alt="Full-size Image"
+									/>
+								</div>
+								<header>
+									<h3>Monster Creation Page</h3>
+								</header>
+							</article>
+							<article class="item">
+								<img
+									src="images/danmachiRPG/d_weaponshop.png"
+									onclick="openModal('images/danmachiRPG/d_weaponshop.png')"
+									style="height: 70%; width: 70%"
+									alt="Image thumbnail"
+								/>
+								<div id="myModal">
+									<span onclick="closeModal()">&times;</span>
+									<img
+										id="modalImage"
+										src="images/danmachiRPG/d_weaponshop.png"
+										alt="Full-size Image"
+									/>
+								</div>
+								<header>
+									<h3>Weapon Shop Page</h3>
+								</header>
+							</article>
+							<article class="item">
+								<img
+									src="images/danmachiRPG/d_DB1.png"
+									onclick="openModal('images/danmachiRPG/d_DB1.png')"
+									style="height: 70%; width: 70%"
+									alt="Image thumbnail"
+								/>
+								<div id="myModal">
+									<span onclick="closeModal()">&times;</span>
+									<img
+										id="modalImage"
+										src="images/danmachiRPG/d_DB1.png"
+										alt="Full-size Image"
+									/>
+								</div>
+								<img
+									src="images/danmachiRPG/d_DB2.png"
+									onclick="openModal('images/danmachiRPG/d_DB2.png')"
+									style="height: 70%; width: 70%"
+									alt="Image thumbnail"
+								/>
+								<div id="myModal">
+									<span onclick="closeModal()">&times;</span>
+									<img
+										id="modalImage"
+										src="images/danmachiRPG/d_DB2.png"
+										alt="Full-size Image"
+									/>
+								</div>
+								<img
+									src="images/danmachiRPG/d_DB3.png"
+									onclick="openModal('images/danmachiRPG/d_DB3.png')"
+									style="height: 70%; width: 70%"
+									alt="Image thumbnail"
+								/>
+								<div id="myModal">
+									<span onclick="closeModal()">&times;</span>
+									<img
+										id="modalImage"
+										src="images/danmachiRPG/d_DB3.png"
+										alt="Full-size Image"
+									/>
+								</div>
+								<header>
+									<h3>Database for Danmachi RPG</h3>
+								</header>
+							</article>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+
+		<!-- Footer -->
+		<div id="footer">
+			<!-- Copyright -->
+			<ul class="copyright">
+				<li>&copy; @SeppuCake. All rights reserved.</li>
+				<li>
+					Credits to Design & Images:
+					<a href="https://html5up.net">HTML5 UP</a> &
+					<a href="https://unsplash.com">Unsplash</a>
+				</li>
+			</ul>
+		</div>
+
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+		<script>
+			// JavaScript functions to open and close the modal window
+			function openModal(imageUrl) {
+				var modal = document.getElementById("myModal");
+				var modalImage = document.getElementById("modalImage");
+				modal.style.display = "block";
+				modalImage.src = imageUrl;
+			}
+
+			function closeModal() {
+				var modal = document.getElementById("myModal");
+				modal.style.display = "none";
+			}
+		</script>
+	</body>
+</html>
