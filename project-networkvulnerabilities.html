@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Hakeem's Portfolio: Calradia RPG</title>
+		<title>Hakeem's Portfolio: PHP Vulnerabilities</title>
 		<meta charset="utf-8" />
 		<meta
 			name="viewport"
@@ -108,14 +108,15 @@
 		<!-- Main -->
 		<div id="main">
 			<!-- Intro -->
-			<section id="top" class="one dark cover">
+			<section id="topOcelot" class="one dark cover">
 				<div class="container">
 					<header>
+						<img src="images/networkvul/sqlinjectionlogo.png" style="width:50%">
 						<h2 class="alt">
-							<strong>Calradia RPG (Java Text-Based RPG)</strong><br />
+							<strong>PHP Vulnerabilities</strong><br />
 						</h2>
 						<p>
-							One of my endeavours in understanding the concept of Object Oriented Programming in Java and further improve my knowledge in Java.<br />
+							These are the projects I have dedicated in learning and challenging myself in programming in various languages and sharpen my knowledge in them and to further enhance my understanding in developing a secured website.<br />
 						</p>
 					</header>
 
@@ -132,12 +133,22 @@
 						<h2>About the Project</h2>
 					</header>
 
-					<p class="tab-like" style="text-align: justify;">
-						Calradia RPG was one of my favourite project of mine that taught me the challenging aspects of Object-Oriented Programming (OOP) in Java. Despite only having basics of Java OOP knowledge, this is my attempt in building my own text-based Role-playing Game (RPG) written in Java by using JOptionPane library and JFrame to create an interactive game with basic Graphical User Interface.
+					<p style="text-align: justify;" class="tab-like">
+						A URL ending in .php is a direct indication that the website/blog uses SQL to deliver a lot of its data, and that we can execute queries directly by changing the URL. Now basically the data in the SQL tables is protected. However, when we send some rogue commands to the SQL server, it doesn't understand what to do, and returns an error. This is a clear indication that with proper coding, we can send queries that will make the database malfunction, and give us all the otherwise private data of its tables. This attack can be used to obtain confidential data like a list of username and passwords of all users on a website.
 					</p>
-					<p class="tab-like" style="text-align: justify;">
-						One of my favourite hobbies is writing fantasy adventure stories as well. I tend to join communities online in tabletop games or role-playing games that I can express my creativity in writing stories in the fantasy world such as Dungeons & Dragons.
+					<p style="text-align: justify;" class="tab-like">
+						In this small project or practice, I tried to familiarize myself with Kali-Linux and the tools provided in the Operating System (OS) to understand the procedures in the most common attacks a website would face; SQL Injection Attacks. Through this method, I gained the knowledge in defining the aspects of secured environment for a website in a web developer's point of view. As demonstrations, I have used an open-source website that is provided by <a href="http://www.vulnweb.com" target="_blank">Acunetix</a> and simple Google Hacking (by using Google Operators using 'inurl') in order to find the loopholes in a PHP written websites and conducted a manual SQL Injection.
 					</p>
+					<p style="text-align: justify;" class="tab-like">
+						A manual SQL Injection does not require any tools aside from the basic knowledge of SQL Queries that an attacker can simply edit the URL of a website to send the queries without using forms. As an example: <br>
+						<div class="container">
+							<img src="images/networkvul/testphpvul5-urlexample.png" style="width: 60%">
+							<img src="images/networkvul/testphpvul3-findingOSversion.png" style="width: 60%">
+						</div>
+						<br>
+						As we can see, through a simple manipulation can tell an attacker the SQL version and the OS version that the website is hosted in.
+					</p>
+					
 				</div>
 			</section>
 
@@ -149,11 +160,11 @@
 					</header>
 
 					<div class="row">
-						<div class="col-4 col-12-mobile">
+						<div class="col-6 col-12-mobile">
 							<article class="item">
 								<img
-									src="images/calradiaRPG/Intro Image.PNG"
-									onclick="openModal('images/calradiaRPG/Intro Image.PNG')"
+									src="images/networkvul/testphpvul1.png"
+									onclick="openModal('images/networkvul/testphpvul1.png')"
 									style="height: 70%; width: 100%"
 									alt="Image thumbnail"
 								/>
@@ -161,18 +172,18 @@
 									<span onclick="closeModal()">&times;</span>
 									<img
 										id="modalImage"
-										src="images/calradiaRPG/Intro Image.PNG"
+										src="images/networkvul/testphpvul1.png"
 										alt="Full-size Image"
 									/>
 								</div>
 								<header>
-									<h3>Calradia RPG Welcome Page</h3>
+									<h3>Homepage of Target Website</h3>
 								</header>
 							</article>
 							<article class="item">
 								<img
-									src="images/calradiaRPG/Battle GUI.PNG"
-									onclick="openModal('images/calradiaRPG/Battle GUI.PNG')"
+									src="images/networkvul/testphpvul2.png"
+									onclick="openModal('images/networkvul/testphpvul2.png')"
 									style="height: 70%; width: 100%"
 									alt="Image thumbnail"
 								/>
@@ -180,58 +191,20 @@
 									<span onclick="closeModal()">&times;</span>
 									<img
 										id="modalImage"
-										src="images/calradiaRPG/Battle GUI.PNG"
+										src="images/networkvul/testphpvul2.png"
 										alt="Full-size Image"
 									/>
 								</div>
 								<header>
-									<h3>Battle Graphical User Interface (GUI)</h3>
-								</header>
-							</article>
-							<article class="item">
-								<img
-									src="images/calradiaRPG/Input Character GUI.PNG"
-									onclick="openModal('images/calradiaRPG/Input Character GUI.PNG')"
-									style="height: 70%; width: 100%"
-									alt="Image thumbnail"
-								/>
-								<div id="myModal">
-									<span onclick="closeModal()">&times;</span>
-									<img
-										id="modalImage"
-										src="images/calradiaRPG/Input Character GUI.PNG"
-										alt="Full-size Image"
-									/>
-								</div>
-								<header>
-									<h3>Character Creation Page</h3>
-								</header>
-							</article>
-							<article class="item">
-								<img
-									src="images/calradiaRPG/Score.PNG"
-									onclick="openModal('images/calradiaRPG/Score.PNG')"
-									style="height: 70%; width: 100%"
-									alt="Image thumbnail"
-								/>
-								<div id="myModal">
-									<span onclick="closeModal()">&times;</span>
-									<img
-										id="modalImage"
-										src="images/calradiaRPG/Score.PNG"
-										alt="Full-size Image"
-									/>
-								</div>
-								<header>
-									<h3>Score Page</h3>
+									<h3>Initial Vulnerability Test</h3>
 								</header>
 							</article>
 						</div>
-						<div class="col-4 col-12-mobile">
+						<div class="col-6 col-12-mobile">
 							<article class="item">
 								<img
-									src="images/calradiaRPG/BattleSystem.PNG"
-									onclick="openModal('images/calradiaRPG/BattleSystem.PNG')"
+									src="images/networkvul/testphpvul3-findingOSversion.png"
+									onclick="openModal('images/networkvul/testphpvul3-findingOSversion.png')"
 									style="height: 70%; width: 100%"
 									alt="Image thumbnail"
 								/>
@@ -239,18 +212,18 @@
 									<span onclick="closeModal()">&times;</span>
 									<img
 										id="modalImage"
-										src="images/calradiaRPG/BattleSystem.PNG"
+										src="images/networkvul/testphpvul3-findingOSversion.png"
 										alt="Full-size Image"
 									/>
 								</div>
 								<header>
-									<h3>Encounter (Battle System)</h3>
+									<h3>Finding Out SQL & OS Versions</h3>
 								</header>
 							</article>
 							<article class="item">
 								<img
-									src="images/calradiaRPG/DeathPage.PNG"
-									onclick="openModal('images/calradiaRPG/DeathPage.PNG')"
+									src="images/networkvul/testphpvul4.png"
+									onclick="openModal('images/networkvul/testphpvul4.png')"
 									style="height: 70%; width: 100%"
 									alt="Image thumbnail"
 								/>
@@ -258,71 +231,12 @@
 									<span onclick="closeModal()">&times;</span>
 									<img
 										id="modalImage"
-										src="images/calradiaRPG/DeathPage.PNG"
+										src="images/networkvul/testphpvul4.png"
 										alt="Full-size Image"
 									/>
 								</div>
 								<header>
-									<h3>Character's Death Page</h3>
-								</header>
-							</article>
-							<article class="item">
-								<img
-									src="images/calradiaRPG/loginSys flowchart.png"
-									onclick="openModal('images/calradiaRPG/loginSys flowchart.png')"
-									style="height: 70%; width: 50%"
-									alt="Image thumbnail"
-								/>
-								<div id="myModal">
-									<span onclick="closeModal()">&times;</span>
-									<img
-										id="modalImage"
-										src="images/calradiaRPG/loginSys flowchart.png"
-										alt="Full-size Image"
-									/>
-								</div>
-								<header>
-									<h3>Flowchart for Login System</h3>
-								</header>
-							</article>
-						</div>
-						<div class="col-4 col-12-mobile">
-							<article class="item">
-								<img
-									src="images/calradiaRPG/gameflowchart.png"
-									onclick="openModal('images/calradiaRPG/gameflowchart.png')"
-									style="height: 70%; width: 70%"
-									alt="Image thumbnail"
-								/>
-								<div id="myModal">
-									<span onclick="closeModal()">&times;</span>
-									<img
-										id="modalImage"
-										src="images/calradiaRPG/gameflowchart.png"
-										alt="Full-size Image"
-									/>
-								</div>
-								<header>
-									<h3>Flowchart for Battle System</h3>
-								</header>
-							</article>
-							<article class="item">
-								<img
-									src="images/calradiaRPG/programflowchart.png"
-									onclick="openModal('images/calradiaRPG/programflowchart.png')"
-									style="height: 70%; width: 70%"
-									alt="Image thumbnail"
-								/>
-								<div id="myModal">
-									<span onclick="closeModal()">&times;</span>
-									<img
-										id="modalImage"
-										src="images/calradiaRPG/programflowchart.png"
-										alt="Full-size Image"
-									/>
-								</div>
-								<header>
-									<h3>Flowchart for Character Creation System</h3>
+									<h3>Fetching Data from the Database to Identify Name of Index</h3>
 								</header>
 							</article>
 						</div>
