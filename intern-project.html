@@ -11,6 +11,94 @@
 			.tab-like{
 				text-indent: 20px;
 			}
+			.row {
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: space-between;
+				margin-top: 20px;
+			}
+
+			.col-4 {
+				width: calc(33.33% - 20px);
+				margin-bottom: 20px;
+			}
+
+			.item {
+				position: relative;
+				overflow: hidden;
+				height: 250px; /* Adjust the height as needed */
+			}
+
+			.item img {
+				display: block;
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				transition: transform 0.3s;
+				cursor: pointer;
+			}
+
+			.item:hover img {
+				transform: scale(1.1);
+			}
+
+			.item .description {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background-color: rgba(0, 0, 0, 0.8);
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				flex-direction: column;
+				opacity: 0;
+				transition: opacity 0.3s;
+			}
+
+			.item:hover .description {
+				opacity: 1;
+			}
+
+			.item .description h3 {
+				color: #fff;
+				margin-bottom: 10px;
+			}
+
+			.item .description a {
+				display: inline-block;
+				padding: 10px 20px;
+				background-color: #fff;
+				color: #000;
+				text-decoration: none;
+				border-radius: 4px;
+				transition: background-color 0.3s;
+			}
+
+			.item .description a:hover {
+				background-color: #000;
+				color: #fff;
+			}
+
+			.module-list {
+				text-align: left;
+			}
+
+			.module-list ul {
+				list-style-type: none;
+			}
+
+			.module-list li {
+				list-style-type: disc;
+				margin-bottom: 1em;
+			}
+
+			.module-list li strong {
+				font-weight: bold;
+				display: block;
+				margin-bottom: 0.5em;
+			}
 		</style>
 	</head>
 	<body class="is-preload">
@@ -51,155 +139,196 @@
 			</div>
 
 		<!-- Main -->
-			<div id="main">
+		<div id="main">
 
-				<!-- Intro -->
-					<section id="top" class="one dark cover">
-						<div class="container">
+			<!-- Intro -->
+			<section id="top" class="one dark cover">
+				<div class="container">
 
-							<header>
-								<h2 class="alt"><strong>e-Procurement System</strong>,<br />
-								</h2>
-								<p>A project that I was assigned to create and deploy the module as a part of my internship program.<br /></p>
-							</header>
+					<header>
+						<h2 class="alt"><strong>e-Procurement System</strong>,<br />
+						</h2>
+						<p>A project that I was assigned to create and deploy the module as a part of my internship program.<br /></p>
+					</header>
 
-							<footer>
-								<a href="#portfolio" class="button scrolly">Learn more</a>
-							</footer>
+					<footer>
+						<a href="#portfolio" class="button scrolly">Learn more</a>
+					</footer>
 
+				</div>
+			</section>
+
+			<!-- Portfolio -->
+			<section id="portfolio" class="two">
+				<div class="container">
+					<header>
+						<h2>About the Project</h2>
+					</header>
+					<p class="tab-like" style="text-align: justify;">
+						CompuRex Corporation is a company that provides Software as a Service (SaaS). Delivering new technological solutions and digital media contents to organizations. I am delighted for the opportunity to work with this company with the amount of projects and tasks each employee responsible to deliver. Through this project, I was tasked to create a responsive website and a dashboard for statistics displays such as number of orders, number of procurements, and etcetera. The project also required me to create a database included with the Entity Relationship Diagram (ERD) for each modules such as:
+					</p>
+					<ul class="module-list">
+						<li>
+							<strong>User Login Module:</strong>
+							<ul>
+								<li><strong>Purpose:</strong> Provides a secure authentication system for users to log in to the website.</li>
+								<li><strong>Importance:</strong> Ensures that only authorized users can access the system, protecting sensitive information and maintaining data privacy.</li>
+							</ul>
+						</li>
+						<li>
+							<strong>Dashboard:</strong>
+							<ul>
+								<li><strong>Purpose:</strong> Displays statistics and key metrics related to the business, such as the number of orders, procurements, and other relevant data.</li>
+								<li><strong>Importance:</strong> Enables users to have a centralized view of important information, facilitating data-driven decision-making and providing insights into the company's performance.</li>
+							</ul>
+						</li>
+						<li>
+							<strong>User Access Control Module</strong>
+							<ul>
+								<li><strong>Purpose:</strong> Manages user roles and permissions, allowing administrators to control access to different parts of the system.</li>
+								<li><strong>Importance:</strong> Ensures that the right level of access is granted to users based on their roles, enhancing security and preventing unauthorized access to sensitive functionalities.</li>
+							</ul>
+						</li>
+						<li>
+							<strong>Product Registration Module</strong>
+							<ul>
+								<li><strong>Purpose:</strong> Facilitates the registration and management of products in the system, including details such as product information, pricing, and inventory.</li>
+								<li><strong>Importance:</strong> Enables efficient management of the company's product catalog, streamlining processes related to product creation, updates, and availability tracking.</li>
+							</ul>
+						</li>
+						<li>
+							<strong>Procurement Registration Module</strong>
+							<ul>
+								<li><strong>Purpose:</strong> Handles the registration and tracking of procurement activities, including supplier information, purchase orders, and delivery status.</li>
+								<li><strong>Importance:</strong> Supports the procurement process by providing a centralized system for managing supplier relationships, monitoring orders, and ensuring timely delivery of goods or services.</li>
+							</ul>
+						</li>
+						<li>
+							<strong>Messaging Module</strong>
+							<ul>
+								<li><strong>Purpose:</strong> Enables communication and collaboration within the system, allowing users to send messages, notifications, or alerts to each other. </li>
+								<li><strong>Importance:</strong> Facilitates efficient communication among team members, enhancing collaboration, sharing of information, and timely decision-making.</li>
+							</ul>
+						</li>
+						<li>
+							<strong>Create, Read, Update, Delete (CRUD) Modules (For Product & Procurement Modules)</strong>
+							<ul>
+								<li><strong>Purpose:</strong> Provides basic CRUD functionality for managing data related to products and procurements, allowing users to create, view, update, and delete records.</li>
+								<li><strong>Importance:</strong> Enables users to perform essential operations on product and procurement data, ensuring data accuracy, integrity, and efficient data management.</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</section>
+
+			<!-- Project Images -->
+			<section id="images" class="three">
+				<div class="container">
+					<header>
+						<h2>Project Images</h2>
+					</header>
+
+					<div class="row">
+						<div class="col-4 col-12-mobile">
+							<article class="item">
+								<img src="images/loginpage.png" onclick="openModal('images/loginpage.png')" alt="Image thumbnail" />
+								<div id="myModal">
+									<span onclick="closeModal()">&times;</span>
+									<img id="modalImage" src="images/loginpage.png" alt="Full-size Image" />
+								</div>
+								<header>
+									<h3>Login Page</h3>
+								</header>
+							</article>
+							<article class="item">
+								<img src="images/dashboard.png" onclick="openModal('images/dashboard.png')" alt="Image thumbnail" />
+								<div id="myModal">
+									<span onclick="closeModal()">&times;</span>
+									<img id="modalImage" src="images/dashboard.png" alt="Full-size Image" />
+								</div>
+								<header>
+									<h3>Dashboard</h3>
+								</header>
+							</article>
+							<article class="item">
+								<img src="images/ERD.png" onclick="openModal('images/ERD.png')" alt="Image thumbnail" />
+								<div id="myModal">
+									<span onclick="closeModal()">&times;</span>
+									<img id="modalImage" src="images/ERD.png" alt="Full-size Image" />
+								</div>
+								<header>
+									<h3>Project's Entity Relationship Diagram (ERD)</h3>
+								</header>
+							</article>
 						</div>
-					</section>
-
-				<!-- Portfolio -->
-					<section id="portfolio" class="two">
-						<div class="container">
-
-							<header>
-								<h2>About the Project</h2>
-							</header>
-
-							<p class="tab-like" style="text-align: justify;">CompuRex Corporation is a company that provides Software as a Service (SaaS). Delivering new technological solutions and digital media contents to organizations. I am delighted for the opportunity to work with this company with the amount of projects and tasks each employee responsible to deliver. Through this project, I was tasked to create a responsive website and a dashboard for statistics displays such as number of orders, number of procurements, and etcetera. The project also required me to create a database included with the Entity Relationship Diagram (ERD) for each modules such as:
-              <ul style="text-align: left;">
-                <li>User Login Module</li>
-                <li>Dashboard</li>
-                <li>User Access Control Module (Admin Use)</li>
-                <li>Product Registration Module</li>
-                <li>Procurement Registration Module</li>
-                <li>Messaging Module</li>
-                <li>Create, Read, Update, Delete (CRUD) Modules (For Product & Procurement Modules)</li>
-              </ul>
-              </p>
-            </div>
-          </section>
-
-        <!-- Project Images -->
-          <section id="images" class="three">
-            <div class="container">
-              <header>
-                <h2>Project Images</h2>
-              </header>
-
-              <div class="row">
-								<div class="col-4 col-12-mobile">
-									<article class="item">
-										<img src="images/loginpage.png" onclick="openModal('images/loginpage.png')" style="height:70%; width:70%" alt="Image thumbnail" />
-										<div id="myModal">
-											<span onclick="closeModal()">&times;</span>
-											<img id="modalImage" src="images/loginpage.png" alt="Full-size Image" />
-										</div>
-										<header>
-											<h3>Login Page</h3>
-										</header>
-									</article>
-									<article class="item">
-										<img src="images/dashboard.png" onclick="openModal('images/dashboard.png')" style="height:70%; width:70%" alt="Image thumbnail" />
-										<div id="myModal">
-											<span onclick="closeModal()">&times;</span>
-											<img id="modalImage" src="images/dashboard.png" alt="Full-size Image" />
-										</div>
-										<header>
-											<h3>Dashboard</h3>
-										</header>
-									</article>
-									<article class="item">
-										<img src="images/ERD.png" onclick="openModal('images/ERD.png')" style="height:70%; width:70%" alt="Image thumbnail" />
-										<div id="myModal">
-											<span onclick="closeModal()">&times;</span>
-											<img id="modalImage" src="images/ERD.png" alt="Full-size Image" />
-										</div>
-										<header>
-											<h3>Project's Entity Relationship Diagram (ERD)</h3>
-										</header>
-									</article>
+						<div class="col-4 col-12-mobile">
+							<article class="item">
+								<img src="images/newproduct.png" onclick="openModal('images/newproduct.png')" alt="Image thumbnail" />
+								<div id="myModal">
+									<span onclick="closeModal()">&times;</span>
+									<img id="modalImage" src="images/newproduct.png" alt="Full-size Image" />
 								</div>
-								<div class="col-4 col-12-mobile">
-									<article class="item">
-										<img src="images/newproduct.png" onclick="openModal('images/newproduct.png')" style="height:70%; width:70%" alt="Image thumbnail" />
-										<div id="myModal">
-											<span onclick="closeModal()">&times;</span>
-											<img id="modalImage" src="images/newproduct.png" alt="Full-size Image" />
-										</div>
-										<header>
-											<h3>Product Registration</h3>
-										</header>
-									</article>
-									<article class="item">
-										<img src="images/crud1.png" onclick="openModal('images/crud1.png')" style="height:70%; width:70%" alt="Image thumbnail" />
-										<div id="myModal">
-											<span onclick="closeModal()">&times;</span>
-											<img id="modalImage" src="images/crud1.png" alt="Full-size Image" />
-										</div>
-										<header>
-											<h3>CRUD Module</h3>
-										</header>
-									</article>
-									<article class="item">
-										<img src="images/orderlist.png" onclick="openModal('images/orderlist.png')" style="height:70%; width:70%" alt="Image thumbnail" />
-										<div id="myModal">
-											<span onclick="closeModal()">&times;</span>
-											<img id="modalImage" src="images/orderlist.png" alt="Full-size Image" />
-										</div>
-										<header>
-											<h3>Procurement Listing</h3>
-										</header>
-									</article>
+								<header>
+									<h3>Product Registration</h3>
+								</header>
+							</article>
+							<article class="item">
+								<img src="images/crud1.png" onclick="openModal('images/crud1.png')" alt="Image thumbnail" />
+								<div id="myModal">
+									<span onclick="closeModal()">&times;</span>
+									<img id="modalImage" src="images/crud1.png" alt="Full-size Image" />
 								</div>
-								<div class="col-4 col-12-mobile">
-									<article class="item">
-										<img src="images/uac.png" onclick="openModal('images/uac.png')" style="height:70%; width:70%" alt="Image thumbnail" />
-										<div id="myModal">
-											<span onclick="closeModal()">&times;</span>
-											<img id="modalImage" src="images/uac.png" alt="Full-size Image" />
-										</div>
-										<header>
-											<h3>User Access Control Dashboard</h3>
-										</header>
-									</article>
-									<article class="item">
-										<img src="images/messagingmodule.png" onclick="openModal('images/messagingmodule.png')" style="height:70%; width:70%" alt="Image thumbnail" />
-										<div id="myModal">
-											<span onclick="closeModal()">&times;</span>
-											<img id="modalImage" src="images/messagingmodule.png" alt="Full-size Image" />
-										</div>
-										<header>
-											<h3>Messaging Module</h3>
-										</header>
-									</article>
-									<article class="item">
-										<img src="images/productdetail.png" onclick="openModal('images/productdetail.png')" style="height:70%; width:70%" alt="Image thumbnail" />
-										<div id="myModal">
-											<span onclick="closeModal()">&times;</span>
-											<img id="modalImage" src="images/productdetail.png" alt="Full-size Image" />
-										</div>
-										<header>
-											<h3>Product Details</h3>
-										</header>
-									</article>
+								<header>
+									<h3>CRUD Module</h3>
+								</header>
+							</article>
+							<article class="item">
+								<img src="images/orderlist.png" onclick="openModal('images/orderlist.png')" alt="Image thumbnail" />
+								<div id="myModal">
+									<span onclick="closeModal()">&times;</span>
+									<img id="modalImage" src="images/orderlist.png" alt="Full-size Image" />
 								</div>
-							</div>
-            </div>
-          </section>
-			</div>
+								<header>
+									<h3>Procurement Listing</h3>
+								</header>
+							</article>
+						</div>
+						<div class="col-4 col-12-mobile">
+							<article class="item">
+								<img src="images/uac.png" onclick="openModal('images/uac.png')" alt="Image thumbnail" />
+								<div id="myModal">
+									<span onclick="closeModal()">&times;</span>
+									<img id="modalImage" src="images/uac.png" alt="Full-size Image" />
+								</div>
+								<header>
+									<h3>User Access Control Dashboard</h3>
+								</header>
+							</article>
+							<article class="item">
+								<img src="images/messagingmodule.png" onclick="openModal('images/messagingmodule.png')" alt="Image thumbnail" />
+								<div id="myModal">
+									<span onclick="closeModal()">&times;</span>
+									<img id="modalImage" src="images/messagingmodule.png" alt="Full-size Image" />
+								</div>
+								<header>
+									<h3>Messaging Module</h3>
+								</header>
+							</article>
+							<article class="item">
+								<img src="images/productdetail.png" onclick="openModal('images/productdetail.png')" alt="Image thumbnail" />
+								<div id="myModal">
+									<span onclick="closeModal()">&times;</span>
+									<img id="modalImage" src="images/productdetail.png" alt="Full-size Image" />
+								</div>
+								<header>
+									<h3>Product Details</h3>
+								</header>
+							</article>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
 
 		<!-- Footer -->
 		<div id="footer">

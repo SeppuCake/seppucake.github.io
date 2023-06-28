@@ -16,7 +16,72 @@
 			.tab-like{
 				text-indent: 20px;
 			}
+			.table {
+				width: 100%;
+				border-collapse: collapse;
+				margin-bottom: 20px;
+			}
+			.table td {
+				padding: 10px;
+				text-align: center;
+			}
+			.section-title {
+				font-weight: bold;
+				margin-bottom: 10px;
+			}
+			.horizontal-table {
+				display: flex;
+				justify-content: space-between;
+			}
+			.item {
+				position: relative;
+				overflow: hidden;
+			}
+			.item img {
+				display: block;
+				width: 100%;
+				height: auto;
+				transition: transform 0.3s;
+			}
+			.item:hover img {
+				transform: scale(1.1);
+			}
+			.item .description {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background-color: rgba(0, 0, 0, 0.8);
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				flex-direction: column;
+				opacity: 0;
+				transition: opacity 0.3s;
+			}
+			.item:hover .description {
+				opacity: 1;
+			}
+			.item .description h3 {
+				color: #fff;
+				margin-bottom: 10px;
+			}
+			.item .description a {
+				display: inline-block;
+				padding: 10px 20px;
+				background-color: #fff;
+				color: #000;
+				text-decoration: none;
+				border-radius: 4px;
+				transition: background-color 0.3s;
+			}
+			.item .description a:hover {
+				background-color: #000;
+				color: #fff;
+			}
 		</style>
+
 	</head>
 	<body class="is-preload">
 
@@ -88,85 +153,136 @@
 						<header>
 							<h2>Skills</h2>
 						</header>
+						<div class="row justify-content-center">
+							<div class="col-12">
+								<div class="horizontal-table">
+									<table class="table">
+										<tr>
+											<td colspan="2" class="section-title">Front-End</td>
+										</tr>
+										<tr>
+											<td><i class="fab fa-html5" style="color: #df8b2a;"></i><br>HTML</td>
+											<td><i class="fab fa-js" style="color:#df8b2a"></i><br>JavaScript</td>
+										</tr>
+										<tr>
+											<td><i class="fab fa-bootstrap" style="color:#df8b2a"></i><br>Bootstrap</td>
+											<td><i class="fab fa-css3-alt" style="color:#df8b2a"></i><br>CSS</td>
+										</tr>
+									</table>
+									<table class="table">
+										<tr>
+											<td colspan="2" class="section-title">Back-End</td>
+										</tr>
+										<tr>
+											<td><i class="fas fa-code" style="color:#df8b2a"></i><br>JQuery</td>
+											<td><i class="fas fa-database" style="color:#df8b2a"></i><br>SQL</td>
+										</tr>
+										<tr>
+											<td><i class="fab fa-php" style="color:#df8b2a"></i><br>PHP</td>
+											<td><i class="fas fa-c" style="color:#df8b2a"></i><i class="fas fa-hashtag" style="color:#df8b2a"></i><br>C#</td>
+										</tr>
+									</table>
+									<table class="table">
+										<tr>
+											<td colspan="2" class="section-title">Other Languages</td>
+										</tr>
+										<tr>
+											<td><i class="fab fa-python" style="color:#df8b2a"></i><br>Python</td>
+											<td><i class="fab fa-java" style="color:#df8b2a"></i><br>Java</td>
+										</tr>
+										<tr>
+											<td colspan="2"><i class="fab fa-unity" style="color:#df8b2a"></i><br>Unity</td>
+										</tr>
+									</table>
+								</div>
+							</div>
+						</div>
+				</section>
+
+				<!-- Portfolio -->
+				<section id="portfolio" class="three">
+					<div class="container">
+
+						<header>
+							<h2>Portfolio</h2>
+						</header>
+
+						<p class="tab-like" style="text-align: justify;">I have been freelancing and worked on my own free time to further enhance my skills in programming. I have also done my internship as a Junior Software Developer and worked with Compurex Corporation in training my capabilities to become a Full Stack Developer. Other than that, I continued working with local students in teaching and working with their projects as a freelancer.</p>
+
 						<div class="row">
-							<div class="col-4 col-12-mobile">
+							<div class="col-6 col-12-mobile">
+								<div class="item">
+									<a href="intern-project.html" class="image fit">
+										<img src="images/reportgen1.png" alt="" />
+									</a>
+									<div class="description">
+										<h3>Full Stack Development (Internship)</h3>
+										<a href="intern-project.html">Learn More</a>
+									</div>
+								</div>
+								<div class="item">
+									<a href="anisotropic.html" class="image fit">
+										<img src="images/anisotropicjavahomepage.png" alt="" />
+									</a>
+									<div class="description">
+										<h3>Freelance Work: Anisotropic Diffusion with Java</h3>
+										<a href="anisotropic.html">Learn More</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-6 col-12-mobile">
+								<div class="item">
+									<a href="#" class="image fit">
+										<img src="images/teachingpic.jpg" alt="" />
+									</a>
+									<div class="description">
+										<h3>Tutoring</h3>
+										<a href="#">Learn More</a>
+									</div>
+								</div>
+								<div class="item">
+									<a href="personal-projects.html" class="image fit">
+										<img src="images/personalprojectcropped.png" alt="" />
+									</a>
+									<div class="description">
+										<h3>Personal Projects</h3>
+										<a href="personal-projects.html">Learn More</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--<div class="row">
+							<div class="col-6 col-12-mobile">
 								<article class="item">
-									<h3>Front-End</h4> <br>
-									HTML <i class="fa-brands fa-html5 fa-beat-fade" style="color: #df8b2a;"></i><br /></li>
-									JavaScript <i class="fa-brands fa-js fa-beat-fade" style="color:#df8b2a"></i><br>
-									Bootstrap <i class="fa-brands fa-bootstrap fa-beat-fade" style="color:#df8b2a"></i><br>
-									CSS <i class="fa-brands fa-css3-alt fa-beat-fade" style="color:#df8b2a"></i><br>
+									<a href="intern-project.html" class="image fit"><img src="images/reportgen1.png" alt="" /></a>
+									<header>
+										<h3>Full Stack Development (Internship)</h3>
+									</header>
+								</article>
+								<article class="item">
+									<a href="anisotropic.html" class="image fit"><img src="images/anisotropicjavahomepage.png" alt="" /></a>
+									<header>
+										<h3>Freelance Work: Anisotropic Diffusion with Java</h3>
+									</header>
 								</article>
 							</div>
-							<div class="col-4 col-12-mobile">
+							<div class="col-6 col-12-mobile">
 								<article class="item">
-									<h3>Back-End</h3> <br>
-									JQuery <i class="fa-solid fa-code fa-beat-fade" style="color:#df8b2a"></i><br>
-									SQL <i class="fa-solid fa-database fa-beat-fade" style="color:#df8b2a"></i><br>
-									PHP <i class="fa-brands fa-php fa-beat-fade" style="color:#df8b2a"></i><br>
-									C# <i class="fa-solid fa-c fa-beat-fade" style="color:#df8b2a"></i><i class="fa-solid fa-hashtag fa-beat-fade" style="color:#df8b2a"></i><br>
+									<a href="#" class="image fit"><img src="images/teachingpic.jpg" alt="" /></a>
+									<header>
+										<h3>Tutoring</h3>
+									</header>
 								</article>
-							</div>
-							<div class="col-4 col-12-mobile">
 								<article class="item">
-									<h3>Other Languages</h3> <br>
-									Python <i class="fa-brands fa-python fa-beat-fade" style="color:#df8b2a"></i><br>
-									Java <i class="fa-brands fa-java fa-beat-fade" style="color:#df8b2a"></i><br>
-									Unity <i class="fa-brands fa-unity fa-beat-fade" style="color:#df8b2a"></i><br>
+									<a href="personal-projects.html" class="image fit"><img src="images/personalproject.jpg" alt="" /></a>
+									<header>
+										<h3>Personal Projects</h3>
+									</header>
 								</article>
 							</div>
 						</div>
 					</div>
-				</section>
-
-				<!-- Portfolio -->
-					<section id="portfolio" class="three">
-						<div class="container">
-
-							<header>
-								<h2>Portfolio</h2>
-							</header>
-
-							<p class="tab-like" style="text-align: justify;">I have been freelancing and worked on my own free time to further enhance my skills in programming. I have also done my internship as a Junior Software Developer and worked with Compurex Corporation in training my capabilities to become a Full Stack Developer. Other than that, I continued working with local students in teaching and working with their projects as a freelancer.</p>
-
-							<div class="row">
-								<div class="col-6 col-12-mobile">
-									<article class="item">
-										<a href="intern-project.html" class="image fit"><img src="images/reportgen1.png" alt="" /></a>
-										<header>
-											<h3>Full Stack Development (Internship)</h3>
-										</header>
-									</article>
-									<article class="item">
-										<a href="anisotropic.html" class="image fit"><img src="images/anisotropicjavahomepage.png" alt="" /></a>
-										<header>
-											<h3>Freelance Work: Anisotropic Diffusion with Java</h3>
-										</header>
-									</article>
-								</div>
-								<div class="col-6 col-12-mobile">
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/teachingpic.jpg" alt="" /></a>
-										<header>
-											<h3>Tutoring</h3>
-										</header>
-									</article>
-									<article class="item">
-										<a href="personal-projects.html" class="image fit"><img src="images/personalproject.jpg" alt="" /></a>
-										<header>
-											<h3>Personal Projects</h3>
-										</header>
-									</article>
-									<!--<article class="item">
-										<a href="#" class="image fit"><img src="images/pic04.jpg" alt="" /></a>
-										<header>
-											<h3>Freelance Work: Leave Application</h3>
-										</header>
-									</article>
-								</div>-->
-								</div>
-						</div>
-					</section>
+				</section>-->
 
 				<!-- Contact -->
 					<section id="contact" class="four">
