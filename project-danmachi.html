@@ -19,6 +19,18 @@
 		/>
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
+	<style>
+		.tab-like {
+			text-indent: 20px;
+		}
+
+		.image-item {
+			height: 350px;
+			width: 100%;
+			object-fit: cover;
+			cursor: pointer;
+		}
+	</style>
 	<body class="is-preload">
 		<!-- Header -->
 		<div id="header">
@@ -135,12 +147,12 @@
 					</header>
 
 					<div class="row">
-						<div class="col-6 col-12-mobile">
+						<div class="col-4 col-12-mobile">
 							<article class="item">
 								<img
 									src="images/danmachiRPG/d_welcomepage.png"
 									onclick="openModal('images/danmachiRPG/d_welcomepage.png')"
-									style="height: 70%; width: 70%"
+									class="image-item"
 									alt="Image thumbnail"
 								/>
 								<div id="myModal">
@@ -159,7 +171,7 @@
 								<img
 									src="images/danmachiRPG/d_homepage.png"
 									onclick="openModal('images/danmachiRPG/d_homepage.png')"
-									style="height: 70%; width: 70%"
+									class="image-item"
 									alt="Image thumbnail"
 								/>
 								<div id="myModal">
@@ -178,7 +190,7 @@
 								<img
 									src="images/danmachiRPG/d_battlepage.png"
 									onclick="openModal('images/danmachiRPG/d_battlepage.png')"
-									style="height: 70%; width: 70%"
+									class="image-item"
 									alt="Image thumbnail"
 								/>
 								<div id="myModal">
@@ -194,12 +206,12 @@
 								</header>
 							</article>
 						</div>
-						<div class="col-6 col-12-mobile">
+						<div class="col-4 col-12-mobile">
 							<article class="item">
 								<img
 									src="images/danmachiRPG/d_createmonster.png"
 									onclick="openModal('images/danmachiRPG/d_createmonster.png')"
-									style="height: 70%; width: 70%"
+									class="image-item"
 									alt="Image thumbnail"
 								/>
 								<div id="myModal">
@@ -218,7 +230,7 @@
 								<img
 									src="images/danmachiRPG/d_weaponshop.png"
 									onclick="openModal('images/danmachiRPG/d_weaponshop.png')"
-									style="height: 70%; width: 70%"
+									class="image-item"
 									alt="Image thumbnail"
 								/>
 								<div id="myModal">
@@ -233,53 +245,65 @@
 									<h3>Weapon Shop Page</h3>
 								</header>
 							</article>
-							<article class="item">
-								<img
-									src="images/danmachiRPG/d_DB1.png"
-									onclick="openModal('images/danmachiRPG/d_DB1.png')"
-									style="height: 70%; width: 70%"
-									alt="Image thumbnail"
-								/>
-								<div id="myModal">
-									<span onclick="closeModal()">&times;</span>
+							</div>
+							<div class="col-4 col-12-mobile">
+								<article class="item">
 									<img
-										id="modalImage"
 										src="images/danmachiRPG/d_DB1.png"
-										alt="Full-size Image"
+										onclick="openModal('images/danmachiRPG/d_DB1.png')"
+										class="image-item"
+										alt="Image thumbnail"
 									/>
-								</div>
-								<img
-									src="images/danmachiRPG/d_DB2.png"
-									onclick="openModal('images/danmachiRPG/d_DB2.png')"
-									style="height: 70%; width: 70%"
-									alt="Image thumbnail"
-								/>
-								<div id="myModal">
-									<span onclick="closeModal()">&times;</span>
+									<div id="myModal">
+										<span onclick="closeModal()">&times;</span>
+										<img
+											id="modalImage"
+											src="images/danmachiRPG/d_DB1.png"
+											alt="Full-size Image"
+										/>
+									</div>
+									<header>
+										<h3>Database for Danmachi RPG (Part 1)</h3>
+									</header>
+								</article>
+								<article class="item">
 									<img
-										id="modalImage"
 										src="images/danmachiRPG/d_DB2.png"
-										alt="Full-size Image"
+										onclick="openModal('images/danmachiRPG/d_DB2.png')"
+										class="image-item"
+										alt="Image thumbnail"
 									/>
-								</div>
-								<img
-									src="images/danmachiRPG/d_DB3.png"
-									onclick="openModal('images/danmachiRPG/d_DB3.png')"
-									style="height: 70%; width: 70%"
-									alt="Image thumbnail"
-								/>
-								<div id="myModal">
-									<span onclick="closeModal()">&times;</span>
+									<div id="myModal">
+										<span onclick="closeModal()">&times;</span>
+										<img
+											id="modalImage"
+											src="images/danmachiRPG/d_DB2.png"
+											alt="Full-size Image"
+										/>
+									</div>
+									<header>
+										<h3>Database for Danmachi RPG (Part 2)</h3>
+									</header>
+								</article>
+								<article class="item">
 									<img
-										id="modalImage"
 										src="images/danmachiRPG/d_DB3.png"
-										alt="Full-size Image"
+										onclick="openModal('images/danmachiRPG/d_DB3.png')"
+										class="image-item"
+										alt="Image thumbnail"
 									/>
-								</div>
-								<header>
-									<h3>Database for Danmachi RPG</h3>
-								</header>
-							</article>
+									<div id="myModal">
+										<span onclick="closeModal()">&times;</span>
+										<img
+											id="modalImage"
+											src="images/danmachiRPG/d_DB3.png"
+											alt="Full-size Image"
+										/>
+									</div>
+									<header>
+										<h3>Database for Danmachi RPG (Part 3)</h3>
+									</header>
+								</article>
 						</div>
 					</div>
 				</div>

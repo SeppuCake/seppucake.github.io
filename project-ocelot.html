@@ -22,6 +22,12 @@
 			.tab-like{
 				text-indent: 20px;
 			}
+			.image-item {
+        height: 350px;
+        width: 100%;
+        object-fit: cover;
+        cursor: pointer;
+      }
 		</style>
 	</head>
 	<body class="is-preload">
@@ -244,8 +250,8 @@
 							<article class="item">
 								<img
 									src="images/ocelot/productimage.png"
+									class="image-item"
 									onclick="openModal('images/ocelot/productimage.png')"
-									style="height: 70%; width: 100%"
 									alt="Image thumbnail"
 								/>
 								<div id="myModal">
@@ -263,8 +269,8 @@
 							<article class="item">
 								<img
 									src="images/ocelot/kalinethunter.png"
+									class="image-item"
 									onclick="openModal('images/ocelot/kalinethunter.png')"
-									style="height: 70%; width: 100%"
 									alt="Image thumbnail"
 								/>
 								<div id="myModal">
@@ -282,8 +288,8 @@
 							<article class="item">
 								<img
 									src="images/ocelot/unlocknfc.png"
+									class="image-item"
 									onclick="openModal('images/ocelot/unlocknfc.png')"
-									style="height: 70%; width: 100%"
 									alt="Image thumbnail"
 								/>
 								<div id="myModal">
@@ -303,8 +309,8 @@
 							<article class="item">
 								<img
 									src="images/ocelot/projectposter.png"
+									class="image-item"
 									onclick="openModal('images/ocelot/projectposter.png')"
-									style="height: 70%; width: 100%"
 									alt="Image thumbnail"
 								/>
 								<div id="myModal">
@@ -322,8 +328,8 @@
 							<article class="item">
 								<img
 									src="images/ocelot/arduinouno.png"
+									class="image-item"
 									onclick="openModal('images/ocelot/arduinouno.png')"
-									style="height: 70%; width: 100%"
 									alt="Image thumbnail"
 								/>
 								<div id="myModal">
@@ -341,8 +347,8 @@
 							<article class="item">
 								<img
 									src="images/ocelot/adafruitnfc.png"
+									class="image-item"
 									onclick="openModal('images/ocelot/adafruitnfc.png')"
-									style="height: 70%; width: 100%"
 									alt="Image thumbnail"
 								/>
 								<div id="myModal">
@@ -357,13 +363,32 @@
 									<h3>Adafruit's NFC Shield Hardware</h3>
 								</header>
 							</article>
+							<article class="item">
+								<img
+									src="images/ocelot/reportpage_nmap.png"
+									class="image-item"
+									onclick="openModal('images/ocelot/reportpage_nmap.png')"
+									alt="Image thumbnail"
+								/>
+								<div id="myModal">
+									<span onclick="closeModal()">&times;</span>
+									<img
+										id="modalImage"
+										src="images/ocelot/reportpage_nmap.png"
+										alt="Full-size Image"
+									/>
+								</div>
+								<header>
+									<h3>View Report Page for Ocelot</h3>
+								</header>
+							</article>
 						</div>
 						<div class="col-3 col-12-mobile">
 							<article class="item">
 								<img
 									src="images/ocelot/How Ocelot works.jpg"
+									class="image-item"
 									onclick="openModal('images/ocelot/How Ocelot works.jpg')"
-									style="height: 70%; width: 100%"
 									alt="Image thumbnail"
 								/>
 								<div id="myModal">
@@ -381,8 +406,8 @@
 							<article class="item">
 								<img
 									src="images/ocelot/flowchart.png"
+									class="image-item"
 									onclick="openModal('images/ocelot/flowchart.png')"
-									style="height: 70%; width: 100%"
 									alt="Image thumbnail"
 								/>
 								<div id="myModal">
@@ -400,8 +425,8 @@
 							<article class="item">
 								<img
 									src="images/ocelot/dataflowdiagram.png"
+									class="image-item"
 									onclick="openModal('images/ocelot/dataflowdiagram.png')"
-									style="height: 70%; width: 100%"
 									alt="Image thumbnail"
 								/>
 								<div id="myModal">
@@ -416,13 +441,32 @@
 									<h3>Data Flow Diagram for Ocelot</h3>
 								</header>
 							</article>
+							<article class="item">
+								<img
+									src="images/ocelot/reportpage.png"
+									class="image-item"
+									onclick="openModal('images/ocelot/reportpage.png')"
+									alt="Image thumbnail"
+								/>
+								<div id="myModal">
+									<span onclick="closeModal()">&times;</span>
+									<img
+										id="modalImage"
+										src="images/ocelot/reportpage.png"
+										alt="Full-size Image"
+									/>
+								</div>
+								<header>
+									<h3>Report Page for NMAP Scanner</h3>
+								</header>
+							</article>
 						</div>
 						<div class="col-3 col-12-mobile">
 							<article class="item">
 								<img
 									src="images/ocelot/webdashboard.png"
+									class="image-item"
 									onclick="openModal('images/ocelot/webdashboard.png')"
-									style="height: 70%; width: 100%"
 									alt="Image thumbnail"
 								/>
 								<div id="myModal">
@@ -440,8 +484,8 @@
 							<article class="item">
 								<img
 									src="images/ocelot/webdashboard2.png"
+									class="image-item"
 									onclick="openModal('images/ocelot/webdashboard2.png')"
-									style="height: 70%; width: 100%"
 									alt="Image thumbnail"
 								/>
 								<div id="myModal">
@@ -459,8 +503,8 @@
 							<article class="item">
 								<img
 									src="images/ocelot/reportpage_upload.png"
+									class="image-item"
 									onclick="openModal('images/ocelot/reportpage_upload.png')"
-									style="height: 70%; width: 100%"
 									alt="Image thumbnail"
 								/>
 								<div id="myModal">
@@ -473,44 +517,6 @@
 								</div>
 								<header>
 									<h3>Upload Report Page for Ocelot</h3>
-								</header>
-							</article>
-							<article class="item">
-								<img
-									src="images/ocelot/reportpage.png"
-									onclick="openModal('images/ocelot/reportpage.png')"
-									style="height: 70%; width: 100%"
-									alt="Image thumbnail"
-								/>
-								<div id="myModal">
-									<span onclick="closeModal()">&times;</span>
-									<img
-										id="modalImage"
-										src="images/ocelot/reportpage.png"
-										alt="Full-size Image"
-									/>
-								</div>
-								<header>
-									<h3>Report Page for NMAP Scanner</h3>
-								</header>
-							</article>
-							<article class="item">
-								<img
-									src="images/ocelot/reportpage_nmap.png"
-									onclick="openModal('images/ocelot/reportpage_nmap.png')"
-									style="height: 70%; width: 100%"
-									alt="Image thumbnail"
-								/>
-								<div id="myModal">
-									<span onclick="closeModal()">&times;</span>
-									<img
-										id="modalImage"
-										src="images/ocelot/reportpage_nmap.png"
-										alt="Full-size Image"
-									/>
-								</div>
-								<header>
-									<h3>View Report Page for Ocelot</h3>
 								</header>
 							</article>
 						</div>
