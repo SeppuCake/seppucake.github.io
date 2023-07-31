@@ -11,6 +11,12 @@
 			.tab-like{
 				text-indent: 20px;
 			}
+			.image-item {
+        height: 350px;
+        width: 100%;
+        object-fit: cover;
+        cursor: pointer;
+      }
 		</style>
 	</head>
 	<body class="is-preload">
@@ -98,40 +104,55 @@
               <div class="row">
 								<div class="col-4 col-12-mobile">
 									<article class="item">
-										<img src="images/equationPM1.jpg" style="height:70%; width:70%" onclick="openModal('images/equationPM1.jpg')" alt="Image thumbnail" />
+										<img src="images/equationPM1.jpg" onclick="openModal('images/equationPM1.jpg')" class="image-item" alt="Image thumbnail" />
 										<div id="myModal">
 											<span onclick="closeModal()">&times;</span>
 											<img id="modalImage" src="images/equationPM1.jpg" alt="Full-size Image" />
 										</div>
-										<img src="images/equationPM2.jpg" style="height:70%; width:70%" onclick="openModal('images/equationPM2.jpg')" alt="Image thumbnail" />
+										<header>
+											<h3>Equation for Anisotropic Diffusion (Part 1)</h3>
+										</header>
+									</article>
+									<article class="item">
+										<img src="images/equationPM2.jpg" onclick="openModal('images/equationPM2.jpg')" class="image-item" alt="Image thumbnail" />
 										<div id="myModal">
 											<span onclick="closeModal()">&times;</span>
 											<img id="modalImage" src="images/equationPM2.jpg" alt="Full-size Image" />
 										</div>
-										<img src="images/equationPM3.jpg" style="height:70%; width:70%" onclick="openModal('images/equationPM2.jpg')" alt="Image thumbnail" />
+										<header>
+											<h3>Equation for Anisotropic Diffusion (Part 2)</h3>
+										</header>
+									</article>
+									<article class="item">
+										<img src="images/equationPM3.jpg" onclick="openModal('images/equationPM2.jpg')" class="image-item" alt="Image thumbnail" />
                     <div id="myModal">
 											<span onclick="closeModal()">&times;</span>
 											<img id="modalImage" src="images/equationPM3.jpg" alt="Full-size Image" />
 										</div>
-										<img src="images/equationPM4.jpg" style="height:70%; width:70%" onclick="openModal('images/equationPM2.jpg')" alt="Image thumbnail" />
+										<header>
+											<h3>Equation for Anisotropic Diffusion (Part 3)</h3>
+										</header>
+									</article>
+									<article class="item">
+										<img src="images/equationPM4.jpg" onclick="openModal('images/equationPM2.jpg')" class="image-item" alt="Image thumbnail" />
                     <div id="myModal">
 											<span onclick="closeModal()">&times;</span>
 											<img id="modalImage" src="images/equationPM4.jpg" alt="Full-size Image" />
 										</div>
 										<header>
-											<h3>Equation for Anisotropic Diffusion</h3>
-										</header>
-									</article>
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/peronamalik1.png" alt="" /></a>
-										<header>
-											<h3>Perona-Malik Equation #1</h3>
+											<h3>Equation for Anisotropic Diffusion (Part 4)</h3>
 										</header>
 									</article>
 								</div>
 								<div class="col-4 col-12-mobile">
 									<article class="item">
-										<img src="images/peronamalik2.png" onclick="openModal('images/peronamalik2.png')" style="height:70%; width:70%" alt="Image thumbnail" />
+										<a href="#" class="image fit"><img src="images/peronamalik1.png" class="image-item" alt="" /></a>
+										<header>
+											<h3>Perona-Malik Equation #1</h3>
+										</header>
+									</article>
+									<article class="item">
+										<img src="images/peronamalik2.png" onclick="openModal('images/peronamalik2.png')" class="image-item" alt="Image thumbnail" />
 										<div id="myModal">
 											<span onclick="closeModal()">&times;</span>
 											<img id="modalImage" src="images/peronamalik2.png" alt="Full-size Image" />
@@ -141,7 +162,7 @@
 										</header>
 									</article>
 									<article class="item">
-										<img src="images/blacketal.png" onclick="openModal('images/blacketal.png')" style="height:70%; width:70%" alt="Image thumbnail" />
+										<img src="images/blacketal.png" onclick="openModal('images/blacketal.png')" class="image-item" alt="Image thumbnail" />
 										<div id="myModal">
 											<span onclick="closeModal()">&times;</span>
 											<img id="modalImage" src="images/blacketal.png" alt="Full-size Image" />
@@ -150,10 +171,8 @@
 											<h3>Black et al Equation</h3>
 										</header>
 									</article>
-								</div>
-								<div class="col-4 col-12-mobile">
 									<article class="item">
-										<img src="images/conductance1.png" onclick="openModal('images/conductance1.png')" style="height:70%; width:70%" alt="Image thumbnail" />
+										<img src="images/conductance1.png" onclick="openModal('images/conductance1.png')" class="image-item" alt="Image thumbnail" />
 										<div id="myModal">
 											<span onclick="closeModal()">&times;</span>
 											<img id="modalImage" src="images/conductance1.png" alt="Full-size Image" />
@@ -162,8 +181,10 @@
 											<h3>Conductance Equation</h3>
 										</header>
 									</article>
+								</div>
+								<div class="col-4 col-12-mobile">
 									<article class="item">
-										<img src="images/anistropicdiffusionresults.png" onclick="openModal('images/anistropicdiffusionresults.png')" style="height:70%; width:70%" alt="Image thumbnail" />
+										<img src="images/anistropicdiffusionresults.png" onclick="openModal('images/anistropicdiffusionresults.png')" class="image-item" alt="Image thumbnail" />
 										<div id="myModal">
 											<span onclick="closeModal()">&times;</span>
 											<img id="modalImage" src="images/anistropicdiffusionresults.png" alt="Full-size Image" />
